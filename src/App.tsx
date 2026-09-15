@@ -14,9 +14,9 @@ function App() {
       <header className="header">
         <div className="header-content">
           <div className="framework-logos" aria-label="Ember.js and React.js">
-            <img src="/ember-logo.svg" alt="Ember.js" />
+            <img src={`${import.meta.env.BASE_URL}ember-logo.svg`} alt="Ember.js" />
             <span aria-hidden="true">+</span>
-            <img src="/react-logo.svg" alt="React.js" />
+            <img src={`${import.meta.env.BASE_URL}react-logo.svg`} alt="React.js" />
           </div>
           <h1 className="header-title">React vs Ember</h1>
           <p className="header-subtitle">Syntax & concepts comparison cheat sheet</p>
