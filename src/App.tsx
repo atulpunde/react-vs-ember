@@ -35,22 +35,22 @@ function App() {
         <section className="comparison-section">
           <h2>Quick Syntax Comparison</h2>
 
-          <div className="comparison">
-            <div className="comparison-header">
-              <div>Task</div>
-              <div>Ember Octane</div>
-              <div>React</div>
+          <div className="comparison" role="table" aria-label="Ember Octane and React syntax comparison">
+            <div className="comparison-header" role="row">
+              <div role="columnheader">Task</div>
+              <div role="columnheader">Ember Octane</div>
+              <div role="columnheader">React</div>
             </div>
 
             {comparisons.map((comparison) => (
-              <div className="comparison-row" key={comparison.task}>
-                <div className="task">{comparison.task}</div>
+              <div className="comparison-row" role="row" key={comparison.task}>
+                <div className="task" role="rowheader">{comparison.task}</div>
 
-                <div className="syntax ember">
+                <div className="syntax ember" role="cell">
                   <code>{comparison.ember}</code>
                 </div>
 
-                <div className="syntax react">
+                <div className="syntax react" role="cell">
                   <code>{comparison.react}</code>
                 </div>
               </div>
