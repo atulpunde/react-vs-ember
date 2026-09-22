@@ -3,6 +3,6 @@ import { defineConfig } from 'vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/react-vs-ember/",
+  base: process.env.NETLIFY ? '/' : '/react-vs-ember/',
   plugins: [react()],
 })
