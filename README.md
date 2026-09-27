@@ -4,7 +4,9 @@ A concise, syntax-focused reference for comparing **Ember Octane** and **React**
 
 ## Project is live
 
-The project is hosted on GitHub Pages: https://atulpunde.github.io/react-vs-ember/
+The project is hosted on:
+- Netlify: https://ember-vs-react.netlify.app/
+- GitHub Pages: https://atulpunde.github.io/react-vs-ember/
 
 ## What is included
 
